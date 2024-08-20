@@ -2,14 +2,6 @@
 
 This library provides a Python interface for interacting with the Stonfi DEX API. It allows you to retrieve information about assets, farms, pools, markets, and wallets, as well as simulate and execute swaps.
 
-## Installation
-
-To install the library, you can use pip:
-
-```
-pip install stonfi
-```
-
 ## Usage
 
 Here's an example of how to use the library to retrieve information about an asset:
