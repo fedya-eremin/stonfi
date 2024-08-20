@@ -30,11 +30,10 @@ async def test_get_farms():
     assert isinstance(farms, list)
     assert all(isinstance(farm, Farm) for farm in farms)
 
-@pytest.mark.skip(reason="Broken handler")
 @pytest.mark.asyncio
 async def test_get_farm():
     client = APIClient()
-    farm = await client.get_farm(ASSET_ADDR)
+    farm = await client.get_farm(FARM_ADDR)
     assert isinstance(farm, Farm)
 
 @pytest.mark.asyncio
