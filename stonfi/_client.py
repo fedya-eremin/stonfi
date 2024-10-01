@@ -110,16 +110,6 @@ class APIClient:
         response = await self.client.get(f'{self.base_url}/v1/markets')
         return response.json()["pairs"]
 
-    async def get_pools(self) -> list[Pool]:
-        """
-        Fetches a list of all pools available in the API.
-        
-        Returns:
-            list[Pool]: A list of Pool objects representing all pools.
-        """
-        response = await self.client.get(f'{self.base_url}/v1/pools')
-        return [Pool.from_dict(pool) for pool in response.json()["pool_list"]]
-
     async def get_pool(self, pool_addr: str) -> Pool:
         """
         Fetches details of a specific pool by its address.
