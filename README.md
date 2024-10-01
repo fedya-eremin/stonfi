@@ -5,12 +5,12 @@ This library provides a Python interface for interacting with the Stonfi DEX API
 ## Usage
 
 Here's an example of how to use the library to retrieve information about an asset:
-
+NOTICE! You need to add timeout= optional kwarg if you are going to use queries with huge selection.
 ```python
 from stonfi import APIClient
 
 async def main():
-    client = APIClient()
+    client = APIClient()  # you need to add timeout= optional kwarg if you are going to use queries with huge selection
     asset = await client.get_asset("EQDwlPXvgDemNYEjEaJw8vxh9bYPqC--w2NnqFryU6Ae6Eoz")
     print(asset.name)
 
@@ -24,7 +24,6 @@ The library provides the following methods for interacting with the Stonfi API:
 * `get_farms()`: Retrieve a list of all farms on the DEX.
 * `get_farm(farm_id)`: Retrieve information about a specific farm.
 * `get_markets()`: Retrieve a list of all markets on the DEX.
-* `get_pools()`: Retrieve a list of all pools on the DEX.
 * `get_pool(pool_id)`: Retrieve information about a specific pool.
 * `get_swap_status(contract_id, offer_id, units)`: Retrieve the status of a swap between two assets.
 * `reverse_swap_simulate(simulate_data)`: Simulate a reverse swap between two assets.
