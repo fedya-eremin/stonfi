@@ -24,12 +24,15 @@ class APIClient:
         client (httpx.AsyncClient): The HTTP client used to make requests to the API.
     """
 
-    def __init__(self):
+    def __init__(self, timeout: float = 15):
         """
         Initializes the APIClient with a default AsyncClient that retries up to 5 times
         in case of failures.
         """
-        self.client = httpx.AsyncClient(transport=httpx.AsyncHTTPTransport(retries=5))
+        self.client = httpx.AsyncClient(
+            transport=httpx.AsyncHTTPTransport(retries=5),
+            timeout=timeout,
+        )
 
     @property
     def base_url(self) -> str:
