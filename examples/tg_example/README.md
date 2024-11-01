@@ -3,6 +3,7 @@
 ```python
 poetry install
 ```
+Then edit TOKEN variable and add your Telegram bot API token
 ## Run
 ```python
 poetry run python main.py
