@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tg-examples"
+version = "0.1.0"
+description = ""
+authors = ["dohodyaga <nnnzagora625@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+stonfi = {git = "https://github.com/fedya-eremin/stonfi"}
+aiogram = "^3.13.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
