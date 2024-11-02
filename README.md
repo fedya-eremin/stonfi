@@ -2,6 +2,18 @@
 
 This library provides a Python interface for interacting with the Stonfi DEX API. It allows you to retrieve information about assets, farms, pools, markets, and wallets, as well as simulate and execute swaps.
 
+## Practical Usage
+Examples
+The following `examples` are included in this repository:
+
+* getting_assets_on_wallet.py: Gets the assets on a specified wallet address.
+* describe_asset.py: Describes a specified asset.
+* describe_farm.py: Describes a specified farm.
+* describe_pool.py: Describes a specified pool.
+* simulating_progressive.py: Simulates a progressive transaction.
+* timechecking_dex_activity.py: Checks the DEX activity for a specified period of time.
+* top4_remaining_pools.py: Gets the top 4 remaining pools.
+
 ## Usage
 
 Here's an example of how to use the library to retrieve information about an asset:
