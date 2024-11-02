@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stonfi"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = [
     "Fedor Eremin <ereminfedor8652@list.ru>",
